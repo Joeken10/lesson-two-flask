@@ -1,0 +1,27 @@
+flask - python frame work 
+postgresql
+
+tools 
+-postman -api test tool
+-SQLAlchemy-ORM tools 
+-flask -package/library
+-jsonify -serialize data
+
+
+sudo nano /etc/postgresql/14/main/pg_hba.conf
+
+model.py 
+pip install Flask-SQLAlchemy
+
+psycopg2- when using postgresql in flask
+
+flask migration - library/package keep track of database
+
+create new migration = flask db init (first time)
+push migration changes = flask db migrate
+push final changes = flask db upgrade
+
+seeding 
+request methods GET,POST,PATCH/PUT,DELETE
+
+endpoint = http://127.0.0.1:5000/music_list
