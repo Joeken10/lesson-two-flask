@@ -21,12 +21,16 @@ with app.app_context():
     # Create songs associated with the artist
     music1 = Music(title='Test Song 1', album_image='image1.jpg', album_link='link1.com', artist=artist)
     music2 = Music(title='Test Song 2', album_image='image2.jpg', album_link='link2.com', artist=artist1)
+    music3 = Music(title='Test Song 3', album_image='image3.jpg', album_link='link3.com', artist=artist)
+    music4 = Music(title='Test Song 4', album_image='image4.jpg', album_link='link4.com', artist=artist1)
 
     # Add artist and songs to the session
     db.session.add(artist)
     db.session.add(artist1)
     db.session.add(music1)
     db.session.add(music2)
+    db.session.add(music3)
+    db.session.add(music4)
 
     db.session.commit()
 
